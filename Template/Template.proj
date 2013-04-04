@@ -32,6 +32,12 @@
     <Folder Include="App_Resources\Android\drawable-nodpi">
       <Platform>Android</Platform>
     </Folder>
+    <Folder Include="img" />
+    <Folder Include="phone" />
+    <Folder Include="scripts\app" />
+    <Folder Include="scripts\app\views" />
+    <Folder Include="styles" />
+    <Folder Include="tablet" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App_Resources\iOS\icon.png" />
@@ -57,15 +63,23 @@
     <Resource Include="App_Resources\Android\drawable-nodpi\splashscreen.9.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="config.xml" />
+    <Content Include="img\logo.png" />
     <Content Include="index.html" />
     <Content Include="kendo\js\jquery.min.js" />
     <Content Include="kendo\js\kendo.mobile.min.js" />
+    <Content Include="kendo\js\require.js" />
     <Content Include="kendo\styles\images\back.png" />
     <Content Include="kendo\styles\images\KendoUI.ttf" />
     <Content Include="kendo\styles\images\KendoUI.woff" />
     <Content Include="kendo\styles\kendo.mobile.all.min.css" />
+    <Content Include="phone\page2.html" />
+    <Content Include="ProjectSettings" />
+    <Content Include="scripts\app\app.js" />
+    <Content Include="scripts\app\views\home.js" />
+    <Content Include="scripts\app\views\page2.js" />
     <Content Include="scripts\hello-world.js" />
-    <Content Include="styles\main.css" />
+    <Content Include="scripts\main.js" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
       <TargetName>cordova.js</TargetName>
@@ -74,6 +88,8 @@
       <Platform>Android</Platform>
       <TargetName>cordova.js</TargetName>
     </Content>
+    <Content Include="styles\main.css" />
+    <Content Include="tablet\page2.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Telerik\ICE\Tools\Mobile\MobileTools.targets" />
 </Project>
