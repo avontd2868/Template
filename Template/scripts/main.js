@@ -29,6 +29,9 @@ require(["app/app"], function (application) {
 });
 
 
+
+
+
 	//Wait for phonegap to load
 	document.addEventListener("deviceready", onDeviceReady, false);
 	function onDeviceReady() { navigator.splashscreen.hide(); }
