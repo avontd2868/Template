@@ -1,7 +1,7 @@
 require.config({
     paths: {
-        jQuery: "/kendo/js/jquery.min",
-        kendo: "/kendo/js/kendo.mobile.min"
+        jQuery: "libs/jquery.min",
+        kendo: "libs/kendo.mobile.min"
     },
     shim: {
         jQuery: {

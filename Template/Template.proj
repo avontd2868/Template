@@ -36,6 +36,7 @@
     <Folder Include="phone" />
     <Folder Include="scripts\app" />
     <Folder Include="scripts\app\views" />
+    <Folder Include="scripts\libs" />
     <Folder Include="styles" />
     <Folder Include="tablet" />
   </ItemGroup>
@@ -66,9 +67,9 @@
     <Content Include="config.xml" />
     <Content Include="img\logo.png" />
     <Content Include="index.html" />
-    <Content Include="kendo\js\jquery.min.js" />
-    <Content Include="kendo\js\kendo.mobile.min.js" />
-    <Content Include="kendo\js\require.js" />
+    <Content Include="scripts\libs\jquery.min.js" />
+    <Content Include="scripts\libs\kendo.mobile.min.js" />
+    <Content Include="scripts\libs\require.js" />
     <Content Include="kendo\styles\images\back.png" />
     <Content Include="kendo\styles\images\KendoUI.ttf" />
     <Content Include="kendo\styles\images\KendoUI.woff" />
@@ -78,7 +79,6 @@
     <Content Include="scripts\app\app.js" />
     <Content Include="scripts\app\views\home.js" />
     <Content Include="scripts\app\views\page2.js" />
-    <Content Include="scripts\hello-world.js" />
     <Content Include="scripts\main.js" />
     <Content Include="cordova.ios.js">
       <Platform>iOS</Platform>
