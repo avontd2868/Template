@@ -9,7 +9,6 @@
 	</head>
 	<body>
 
-		<div id="phoneApp" style="display:none;" >
 			<div data-role="view" 
 				 id="home" 
 				 data-init="app.views.home.init" 
@@ -21,47 +20,48 @@
 				<h2 data-bind="text: message"></h2>
 				<a href="#phone/page2.html">Link to page 2</a>
 			</div>
-			<div data-role="layout" data-id="mainLayout" >
-				<div data-role="header">
-					<div data-role="navbar">
-						<a id="back-button" class="nav-button" data-align="left" data-role="backbutton">Tilbage</a>
-						<span data-role="view-title"></span>
-					</div>
-				</div>
-			</div>
-		</div>
 
-		<div id="tabletApp" style="display:none;">
-			<div data-role="splitview" >
-				<div data-role="pane" id="left-pane">
-					<div data-role="view" id="side-view">
-						<div data-role="header">
-							<div data-role="navbar">
-								Slideout Test Left
-							</div>
-						</div>
-						<h2>A menu, content, or other items you want out of the way until user toggles for it.</h2>
-					</div>
-				</div>
 
-				<div data-role="pane" id="right-pane">
-					<div data-role="view" id="main-view">
-						<div data-role="header">
-							<div data-role="navbar">
-								<a id="toggle-button" data-click="app.views.home.toggleClick" data-align="left" data-icon="organize" data-role="button">Slide Out</a>
-								Slideout Test Main
-							</div>
-						</div>
-						<!-- put all your content in this div so you can also swipe
-						like the facebook app, not just the toggle button -->
-						<div id="container" data-role="touch" data-enable-swipe="true" data-swipe="app.views.home.toggleClick">
-							<h2>My main content that I want to be the focus with the option to see a "hidden" left pane. The "Slide Out" button will accomplish this.</h2>
-							<p>You can also swipe this pane so you can get the same slide out toggle animation as the "Slide Out" button.</p>
-						</div>
-					</div>
-				</div>
+        
 
-			</div>
-		</div>
+<div data-role="layout" data-id="drawer-layout">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a data-role="button" data-rel="drawer" href="#my-drawer" data-icon="drawer-button" data-align="left"></a>
+            <span data-role="view-title"></span>
+            <a data-align="right" data-role="button" class="nav-button" href="#home">Index</a>
+        </div>
+    </header>
+</div> 
+            <div data-role="drawer" id="my-drawer" style="width: 270px" data-views="['page2']">
+    <ul data-role="listview" data-type="group">
+        <li>Mailbox
+            <ul>
+                <li data-icon="inbox"><a href="#drawer-home" data-transition="none">Inbox</a></li>
+                <li data-icon="star"><a href="#drawer-starred" data-transition="none">Starred Items</a></li>
+                <li data-icon="compose"><a href="#drawer-drafts" data-transition="none">Drafts</a></li>
+                <li data-icon="sent"><a href="#drawer-sent" data-transition="none">Sent Items</a></li>
+                <li data-icon="trash"><a href="#drawer-deleted" data-transition="none">Deleted Items</a></li>
+                <li data-icon="spam"><a href="#drawer-spam" data-transition="none">Spam</a></li>
+            </ul>
+        </li>
+        <li>Tasks
+            <ul>
+                <li>To Do</li>
+                <li>In Progress</li>
+                <li>Done</li>
+                <li>High Priority</li>
+                <li>Low Priority</li>
+            </ul>
+        </li>
+        <li>Account
+            <ul>
+                <li data-icon="settings">Settings</li>
+                <li data-icon="off">Log Out</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
 	</body>
 </html>

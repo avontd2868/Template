@@ -6,10 +6,7 @@ define(["kendo"], function (kendo) {
         afterShow: function (afterShowEvt) {},
         viewModel: kendo.observable({
             message: "This rocks!"
-        }),
-         toggleClick:   function (e) {
-				$('#right-pane').kendoToggleClass("slide");
-			}	 
+        })
     }
 });
 

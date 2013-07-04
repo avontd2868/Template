@@ -9,16 +9,14 @@ page2View
 ) {
     var _kendoApplication;
  
-    isTablet = kendo.support.mobileOS && kendo.support.mobileOS.tablet;
-    appElement = (isTablet) ? $("#tabletApp") : $("#phoneApp");
+   
 
 			
     return {
         init: function () {
-            _kendoApplication = new kendo.mobile.Application(appElement, { transition: "slide", platform:"ios", layout:"mainLayout"});
-              appElement.show();
+            _kendoApplication = new kendo.mobile.Application(document.body, { transition: "slide", platform:"ios"});
 			  myApp= _kendoApplication;
-
+                 myApp.skin("flat");
         },
         views: {
             home: homeView,
